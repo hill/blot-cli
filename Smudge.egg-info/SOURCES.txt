@@ -1,0 +1,7 @@
+smudge.py
+Smudge.egg-info/PKG-INFO
+Smudge.egg-info/SOURCES.txt
+Smudge.egg-info/dependency_links.txt
+Smudge.egg-info/entry_points.txt
+Smudge.egg-info/requires.txt
+Smudge.egg-info/top_level.txt
