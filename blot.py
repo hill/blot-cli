@@ -7,8 +7,21 @@ import subprocess
 
 @click.group()
 def cli():
-	"""Smudge: For better blotting from the command line!"""
+	"""Blot-CLI: For better blotting from the command line!"""
 	pass
+
+# @cli.command()
+# def dir():
+# 	blotpath = os.getenv("BLOTDIR")
+#
+# 	if blotpath:
+#
+# 		expanded_blotpath = os.path.expanduser(blotpath)
+#
+# 		os.chdir(expanded_blotpath)
+#
+# 	else:
+# 		no_blotpath()
 
 @cli.command()
 def publish():
@@ -64,7 +77,7 @@ def micro(ctx, publish, write, filetype):
 
 		if write:
 			with open(str(micropath) + '/' + filename, mode='w') as f:
-				f.write(write)
+				f.write("Tags: micropost\n\n" + write)
 		else:
 			#click.echo("Open {}!".format(os.getenv("EDITOR"))
 			subprocess.call(["nano", "{}/{}".format(micropath, filename)])

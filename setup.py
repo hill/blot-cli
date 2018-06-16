@@ -4,21 +4,21 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-	name='Smudge',
+	name='Blot',
 	version='1.0.0',
-	py_modules=['smudge'],
+	py_modules=['blot'],
 	install_requires=[
 		'Click',
 
 	],
 	entry_points='''
 		[console_scripts]
-		smudge=smudge:cli
+		blot=blot:cli
 	''',
 
 	author="Tom Hill",
 	author_email="tom@hill.xyz",
-	description="Smudge: For better blotting from the command line!",
+	description="Blot-CLI: For better blotting from the command line!",
 	long_description=long_description,
     long_description_content_type="text/markdown",
 )
